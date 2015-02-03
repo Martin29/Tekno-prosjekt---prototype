@@ -13,7 +13,7 @@ void loop() {
   
   sensorValue = analogRead(sensorPin);
   Serial.println(sensorValue);
-  if (sensorValue < 200) {
+  if (sensorValue > 200) {
     
   digitalWrite(valve,LOW);
   
